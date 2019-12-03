@@ -5,7 +5,7 @@ class HttpRequest {
     const url = "https://maps.googleapis.com/maps/api/place/textsearch/json";
     const params = {
       query: `restaurants+in+${city}`,
-      key: "AIzaSyBoPIVGK0QRgPWMO4vXnY1LWg-dS9d5Cbc"
+      key: process.env.REACT_APP_GOOGLE_API_KEY
     };
 
     return new Promise((resolve, reject) => {
