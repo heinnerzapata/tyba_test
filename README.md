@@ -1,2 +1,4 @@
 # tyba_test
-tyba tetst
+tyba tetst by Heinner Zapata
+
+React Native - under expo
