@@ -1,11 +1,12 @@
 import axios from "axios";
+import Config from 'react-native-config';
 
 class HttpRequest {
   get(city) {
     const url = "https://maps.googleapis.com/maps/api/place/textsearch/json";
     const params = {
       query: `restaurants+in+${city}`,
-      key: process.env.REACT_APP_GOOGLE_API_KEY
+      key: Config.REACT_APP_API_KEY
     };
 
     return new Promise((resolve, reject) => {
